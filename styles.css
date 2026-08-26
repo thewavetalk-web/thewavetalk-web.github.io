@@ -182,7 +182,7 @@ b{font-weight:700}
 .hero-copy--center .hero-title{text-shadow:0 2px 14px rgba(3,14,26,.5),0 1px 3px rgba(3,14,26,.45)}
 .hero-copy--center .hero-sub{text-shadow:0 1px 8px rgba(3,14,26,.4);color:rgba(255,255,255,.92)}
 /* keep the sub description on exactly two lines (one sentence per line) */
-.hero-sub--twoline{max-width:820px}
+.hero-copy--center .hero-sub--twoline{max-width:none;white-space:nowrap}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:800;
   letter-spacing:.16em;color:#cdeef4;margin-bottom:24px;padding:8px 15px;text-transform:uppercase;
   background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:var(--r-pill)}
@@ -535,6 +535,7 @@ b{font-weight:700}
   .hero{min-height:auto;padding:128px 0 72px}
   .hero .hero-bg::after{background:linear-gradient(165deg,rgba(9,38,62,.78) 0%,rgba(12,56,86,.66) 100%)}
   .hero-title--oneline{white-space:normal}
+  .hero-copy--center .hero-sub--twoline{white-space:normal}
   .hero-chips{grid-template-columns:1fr 1fr;gap:12px;margin-top:42px}
   .hero-visual{margin:0 auto;max-width:480px}
   .hd-value{font-size:42px}
