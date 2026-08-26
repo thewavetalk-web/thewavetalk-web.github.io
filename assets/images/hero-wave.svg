@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1414" preserveAspectRatio="xMidYMid slice" role="img" aria-label="블루 웨이브 배경">
+  <defs>
+    <linearGradient id="bl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f6fe0" stop-opacity="0.12"/>
+      <stop offset="0.45" stop-color="#3f7be8" stop-opacity="0.85"/>
+      <stop offset="0.8" stop-color="#5b6fe6" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#7a5be0" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="flA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fb0f4" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3f7be8" stop-opacity="0.40"/>
+    </linearGradient>
+    <linearGradient id="flB" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#aab6f2" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5b6fe6" stop-opacity="0.30"/>
+    </linearGradient>
+    <path id="rib" d="M-80 1000 C 360 1150 640 640 1040 730 C 1400 812 1580 520 2080 280" />
+    <path id="rib2" d="M1040 70 C 1360 250 1520 110 1760 300 C 1910 420 1980 360 2090 470" />
+    <path id="rib3" d="M120 1240 C 420 1300 600 1040 880 1080 C 1120 1114 1280 980 1560 1010" />
+  </defs>
+
+  <rect width="2000" height="1414" fill="#ffffff"/>
+
+  <!-- translucent wave bodies -->
+  <path d="M520 760 C 820 500 1180 980 1520 700 C 1760 505 1860 360 2000 300 L2000 980 C 1640 1040 1200 760 880 980 C 660 1130 540 980 520 760 Z" fill="url(#flA)" opacity="0.55"/>
+  <path d="M300 980 C 600 800 980 1180 1340 940 C 1620 752 1780 720 2000 700 L2000 1140 C 1700 1180 1300 1020 980 1180 C 720 1308 460 1180 300 980 Z" fill="url(#flB)" opacity="0.45"/>
+
+  <!-- ribbon 1 (main wave, dense line art) -->
+  <g fill="none" stroke="url(#bl)" stroke-width="0.9" opacity="0.6">
+    <use href="#rib" y="-64"/><use href="#rib" y="-56"/><use href="#rib" y="-48"/><use href="#rib" y="-40"/>
+    <use href="#rib" y="-32"/><use href="#rib" y="-24"/><use href="#rib" y="-16"/><use href="#rib" y="-8"/>
+    <use href="#rib" y="0"/><use href="#rib" y="8"/><use href="#rib" y="16"/><use href="#rib" y="24"/>
+    <use href="#rib" y="32"/><use href="#rib" y="40"/><use href="#rib" y="48"/><use href="#rib" y="56"/>
+    <use href="#rib" y="64"/><use href="#rib" y="72"/><use href="#rib" y="80"/><use href="#rib" y="88"/>
+    <use href="#rib" y="96"/><use href="#rib" y="104"/><use href="#rib" y="112"/><use href="#rib" y="120"/>
+    <use href="#rib" y="128"/><use href="#rib" y="136"/><use href="#rib" y="144"/><use href="#rib" y="152"/>
+  </g>
+
+  <!-- ribbon 2 (upper-right swirl) -->
+  <g fill="none" stroke="url(#bl)" stroke-width="0.8" opacity="0.45">
+    <use href="#rib2" y="-40"/><use href="#rib2" y="-32"/><use href="#rib2" y="-24"/><use href="#rib2" y="-16"/>
+    <use href="#rib2" y="-8"/><use href="#rib2" y="0"/><use href="#rib2" y="8"/><use href="#rib2" y="16"/>
+    <use href="#rib2" y="24"/><use href="#rib2" y="32"/><use href="#rib2" y="40"/><use href="#rib2" y="48"/>
+    <use href="#rib2" y="56"/><use href="#rib2" y="64"/><use href="#rib2" y="72"/><use href="#rib2" y="80"/>
+    <use href="#rib2" y="88"/><use href="#rib2" y="96"/>
+  </g>
+
+  <!-- ribbon 3 (lower trailing wave) -->
+  <g fill="none" stroke="url(#bl)" stroke-width="0.8" opacity="0.4">
+    <use href="#rib3" y="-24"/><use href="#rib3" y="-16"/><use href="#rib3" y="-8"/><use href="#rib3" y="0"/>
+    <use href="#rib3" y="8"/><use href="#rib3" y="16"/><use href="#rib3" y="24"/><use href="#rib3" y="32"/>
+    <use href="#rib3" y="40"/><use href="#rib3" y="48"/><use href="#rib3" y="56"/><use href="#rib3" y="64"/>
+  </g>
+
+  <!-- bold solid accent strokes (lower-left) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M-40 1160 C 260 1230 430 980 720 1030" stroke="#2f6fe0" stroke-width="4" opacity="0.85"/>
+    <path d="M-40 1210 C 280 1285 470 1030 780 1075" stroke="#4f8bf0" stroke-width="3" opacity="0.7"/>
+    <path d="M-40 1110 C 240 1175 400 940 680 985" stroke="#6f5be0" stroke-width="2.5" opacity="0.6"/>
+  </g>
+</svg>

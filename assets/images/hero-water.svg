@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1414" preserveAspectRatio="xMidYMid slice" role="img" aria-label="햇빛이 비치는 물 배경">
+  <defs>
+    <linearGradient id="water" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#0c4a73"/>
+      <stop offset="0.4" stop-color="#1d72a9"/>
+      <stop offset="0.72" stop-color="#3fa3d2"/>
+      <stop offset="1" stop-color="#bfeaf2"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="78%" cy="6%" r="55%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#cdeffb" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#cdeffb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bok">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="2000" height="1414" fill="url(#water)"/>
+
+  <!-- light rays from top -->
+  <g opacity="0.5">
+    <polygon points="900,-50 1080,-50 760,1100 640,1100" fill="url(#ray)" opacity="0.5"/>
+    <polygon points="1240,-50 1380,-50 1180,1100 1080,1100" fill="url(#ray)" opacity="0.6"/>
+    <polygon points="1560,-50 1760,-50 1640,1100 1500,1100" fill="url(#ray)" opacity="0.45"/>
+  </g>
+
+  <!-- sun glow top-right -->
+  <rect width="2000" height="1414" fill="url(#sun)"/>
+
+  <!-- caustic ripple lines -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="round">
+    <path d="M-40 560 C 360 520 700 600 1040 560 C 1380 520 1700 590 2040 550" stroke-width="2" opacity="0.18"/>
+    <path d="M-40 680 C 380 640 720 715 1060 675 C 1400 636 1720 705 2040 665" stroke-width="2" opacity="0.14"/>
+    <path d="M-40 820 C 360 786 700 856 1040 820 C 1380 784 1700 850 2040 812" stroke-width="1.6" opacity="0.12"/>
+    <path d="M-40 960 C 380 930 720 992 1060 958 C 1400 924 1720 986 2040 952" stroke-width="1.6" opacity="0.1"/>
+  </g>
+
+  <!-- bokeh -->
+  <g>
+    <circle cx="250" cy="180" r="46" fill="url(#bok)" opacity="0.5"/>
+    <circle cx="520" cy="120" r="26" fill="url(#bok)" opacity="0.6"/>
+    <circle cx="720" cy="300" r="60" fill="url(#bok)" opacity="0.4"/>
+    <circle cx="980" cy="160" r="34" fill="url(#bok)" opacity="0.55"/>
+    <circle cx="1180" cy="320" r="70" fill="url(#bok)" opacity="0.35"/>
+    <circle cx="1420" cy="180" r="40" fill="url(#bok)" opacity="0.5"/>
+    <circle cx="1650" cy="300" r="54" fill="url(#bok)" opacity="0.4"/>
+    <circle cx="1850" cy="160" r="30" fill="url(#bok)" opacity="0.55"/>
+    <circle cx="380" cy="420" r="22" fill="url(#bok)" opacity="0.5"/>
+    <circle cx="640" cy="560" r="36" fill="url(#bok)" opacity="0.4"/>
+    <circle cx="900" cy="480" r="18" fill="url(#bok)" opacity="0.6"/>
+    <circle cx="1120" cy="620" r="48" fill="url(#bok)" opacity="0.32"/>
+    <circle cx="1380" cy="520" r="24" fill="url(#bok)" opacity="0.5"/>
+    <circle cx="1600" cy="640" r="40" fill="url(#bok)" opacity="0.35"/>
+    <circle cx="1820" cy="520" r="20" fill="url(#bok)" opacity="0.5"/>
+    <circle cx="180" cy="640" r="30" fill="url(#bok)" opacity="0.42"/>
+    <circle cx="460" cy="780" r="16" fill="url(#bok)" opacity="0.55"/>
+    <circle cx="760" cy="860" r="40" fill="url(#bok)" opacity="0.3"/>
+    <circle cx="1040" cy="800" r="22" fill="url(#bok)" opacity="0.45"/>
+    <circle cx="1320" cy="900" r="34" fill="url(#bok)" opacity="0.3"/>
+    <circle cx="1560" cy="820" r="18" fill="url(#bok)" opacity="0.5"/>
+    <circle cx="1780" cy="900" r="44" fill="url(#bok)" opacity="0.28"/>
+    <circle cx="300" cy="980" r="20" fill="url(#bok)" opacity="0.4"/>
+    <circle cx="620" cy="1080" r="30" fill="url(#bok)" opacity="0.3"/>
+    <circle cx="980" cy="1040" r="16" fill="url(#bok)" opacity="0.45"/>
+    <circle cx="1240" cy="1120" r="26" fill="url(#bok)" opacity="0.28"/>
+    <circle cx="1520" cy="1060" r="20" fill="url(#bok)" opacity="0.38"/>
+    <circle cx="1760" cy="1140" r="34" fill="url(#bok)" opacity="0.24"/>
+  </g>
+</svg>

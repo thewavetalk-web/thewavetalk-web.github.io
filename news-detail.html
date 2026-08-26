@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>뉴스 | THE WAVE TALK</title>
+<meta name="description" content="더웨이브톡 뉴스 상세 — 수상, 투자, 기술 개발 등 주요 소식을 자세히 확인하세요." />
+<meta name="theme-color" content="#0B3C5D" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="news">
+<div id="site-header"></div>
+
+<main>
+<!-- PAGE HERO (filled by news.js) -->
+<section class="page-hero">
+  <div class="hero-bg" aria-hidden="true"><div class="hero-mesh"></div><div class="hero-grid"></div></div>
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">홈</a><i>›</i><a href="news.html">뉴스</a><i>›</i><span id="naCrumb">상세</span></nav>
+    <p class="ph-eyebrow" id="naCat">NEWS</p>
+    <h1 id="naTitle">뉴스</h1>
+    <p class="ph-lead" id="naDate"></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="news-article" id="newsDetail"></div>
+  </div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+<script src="script.js"></script>
+<script src="assets/data/news-data.js"></script>
+<script src="news.js"></script>
+</body>
+</html>

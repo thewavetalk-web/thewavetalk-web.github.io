@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>도입 문의 | THE WAVE TALK</title>
+<meta name="description" content="더웨이브톡 도입 및 협업 문의 — 수질·미생물 측정이 필요한 현장에 맞는 솔루션을 제안해 드립니다. 대전 본사 / 서울 오피스 연락처 안내." />
+<meta name="theme-color" content="#0B3C5D" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+
+<main>
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="hero-bg" aria-hidden="true"><div class="hero-mesh"></div><div class="hero-grid"></div></div>
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">홈</a><i>›</i><span>도입 문의</span></nav>
+    <p class="ph-eyebrow">CONTACT</p>
+    <h1>도입과 협업 문의</h1>
+    <p class="ph-lead">수질·미생물 측정이 필요한 현장이라면 더웨이브톡에 문의해 주세요. 담당자가 환경에 맞는 솔루션을 제안해 드립니다.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-light water-bg-soft">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="contact-intro">
+        <p class="section-eyebrow"><span class="sec-no">01</span> GET IN TOUCH</p>
+        <h2 class="section-title">언제든지 연락 주세요</h2>
+        <p class="contact-desc">
+          제품 도입, 기술 협업, 취재 등 어떤 문의든 환영합니다.
+          아래 양식을 작성하시거나 연락처로 직접 문의해 주세요.
+        </p>
+        <ul class="contact-info">
+          <li><span class="ci-label">대전 본사</span><span class="ci-value">대전 서구 둔산로137번길 21, 8층 (대승빌딩)</span></li>
+          <li><span class="ci-label">서울 오피스</span><span class="ci-value">서울 성동구 광나루로6길 35, 9층 (우림EBIZ센터)</span></li>
+          <li><span class="ci-label">이메일</span><span class="ci-value"><a href="mailto:thewavetalk@thewavetalk.com">thewavetalk@thewavetalk.com</a></span></li>
+          <li><span class="ci-label">전화</span><span class="ci-value"><a href="tel:+82234092477">+82-2-3409-2477</a></span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <p class="cf-title">문의하기</p>
+        <div class="field"><label for="name">이름 <span>*</span></label><input type="text" id="name" name="name" required placeholder="홍길동" /></div>
+        <div class="field"><label for="company">회사 / 기관</label><input type="text" id="company" name="company" placeholder="회사명" /></div>
+        <div class="field"><label for="email">이메일 <span>*</span></label><input type="email" id="email" name="email" required placeholder="name@company.com" /></div>
+        <div class="field">
+          <label for="area">관심 분야</label>
+          <select id="area" name="area">
+            <option value="">선택해 주세요</option>
+            <option>수질 인프라 · 가전</option>
+            <option>산업 공정 품질관리</option>
+            <option>의료 진단</option>
+            <option>기타 / 협업 제안</option>
+          </select>
+        </div>
+        <div class="field field-full"><label for="message">문의 내용 <span>*</span></label><textarea id="message" name="message" rows="4" required placeholder="도입 환경과 필요한 내용을 알려주세요."></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block">문의 보내기 <span class="btn-arrow">→</span></button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="site-footer"></div>
+<script src="script.js"></script>
+</body>
+</html>

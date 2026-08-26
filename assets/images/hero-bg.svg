@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="수질 측정 데이터 배경">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a2c44"/>
+      <stop offset="0.55" stop-color="#0b3c5d"/>
+      <stop offset="1" stop-color="#0e4f7a"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#37C5D4" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7be9f5" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#1E88E5" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowC" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#37C5D4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#37C5D4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#1E88E5" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#1E88E5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+
+  <rect width="1440" height="900" fill="url(#bg)"/>
+
+  <!-- soft glows -->
+  <circle cx="1180" cy="180" r="460" fill="url(#glowC)"/>
+  <circle cx="120" cy="820" r="420" fill="url(#glowB)"/>
+
+  <!-- flowing waves (water / signal) -->
+  <g fill="none" stroke="url(#wave)">
+    <path d="M-40 250 C 300 190 520 320 760 260 S 1200 200 1480 270" stroke-width="2" opacity="0.22"/>
+    <path d="M-40 360 C 280 300 540 430 780 370 S 1220 320 1480 390" stroke-width="1.6" opacity="0.16"/>
+    <path d="M-40 470 C 320 410 520 540 760 480 S 1180 430 1480 500" stroke-width="1.6" opacity="0.13"/>
+    <path d="M-40 600 C 300 540 560 670 800 610 S 1220 560 1480 630" stroke-width="1.4" opacity="0.10"/>
+    <path d="M-40 720 C 320 660 520 790 760 730 S 1180 680 1480 750" stroke-width="1.4" opacity="0.08"/>
+  </g>
+
+  <!-- optical concentric arcs -->
+  <g fill="none" stroke="#7be9f5" opacity="0.10">
+    <circle cx="1230" cy="650" r="70" stroke-width="1.4"/>
+    <circle cx="1230" cy="650" r="120" stroke-width="1.2"/>
+    <circle cx="1230" cy="650" r="175" stroke-width="1"/>
+  </g>
+
+  <!-- data points -->
+  <g fill="#a9eaf2">
+    <circle cx="180" cy="220" r="3" opacity="0.55"/><circle cx="340" cy="300" r="2" opacity="0.4"/>
+    <circle cx="520" cy="240" r="3.5" opacity="0.6"/><circle cx="690" cy="320" r="2" opacity="0.35"/>
+    <circle cx="860" cy="250" r="3" opacity="0.5"/><circle cx="1020" cy="330" r="2.5" opacity="0.45"/>
+    <circle cx="1180" cy="270" r="3" opacity="0.55"/><circle cx="260" cy="470" r="2.5" opacity="0.4"/>
+    <circle cx="470" cy="520" r="2" opacity="0.35"/><circle cx="700" cy="480" r="3" opacity="0.5"/>
+    <circle cx="940" cy="540" r="2" opacity="0.35"/><circle cx="1130" cy="500" r="2.5" opacity="0.45"/>
+    <circle cx="360" cy="660" r="2.5" opacity="0.4"/><circle cx="620" cy="700" r="2" opacity="0.3"/>
+    <circle cx="880" cy="650" r="3" opacity="0.45"/><circle cx="1080" cy="700" r="2" opacity="0.3"/>
+  </g>
+
+  <!-- subtle grain -->
+  <rect width="1440" height="900" filter="url(#noise)" opacity="0.04"/>
+</svg>
