@@ -589,11 +589,13 @@ b{font-weight:700}
 .page-hero .hero-bg::after{background:linear-gradient(100deg,rgba(12,58,94,.7) 0%,rgba(50,135,182,.4) 55%,rgba(120,195,225,.2) 100%)}
 .page-hero .container{position:relative;z-index:1}
 
-/* per-page framing only — brightness/tone unified to the product-page level */
-body[data-page="technology"] .page-hero{background-position:right center,right center}
-body[data-page="solution"] .page-hero{background-position:center bottom,center bottom}
-body[data-page="application"] .page-hero{background-position:left center,left center}
-body[data-page="news"] .page-hero{background-position:center top,center top}
+/* per-page banner background (관리자에서 페이지별로 교체 가능) */
+body[data-page="company"] .page-hero{background-image:url('assets/images/banner-company.jpg'),url('assets/images/hero-water.svg')}
+body[data-page="technology"] .page-hero{background-image:url('assets/images/banner-technology.jpg'),url('assets/images/hero-water.svg');background-position:right center,right center}
+body[data-page="solution"] .page-hero{background-image:url('assets/images/banner-solution.jpg'),url('assets/images/hero-water.svg');background-position:center bottom,center bottom}
+body[data-page="product"] .page-hero{background-image:url('assets/images/banner-product.jpg'),url('assets/images/hero-water.svg')}
+body[data-page="application"] .page-hero{background-image:url('assets/images/banner-application.jpg'),url('assets/images/hero-water.svg');background-position:left center,left center}
+body[data-page="news"] .page-hero{background-image:url('assets/images/banner-news.jpg'),url('assets/images/hero-water.svg');background-position:center top,center top}
 
 /* reusable water backgrounds */
 .water-bg,.page-visual{position:relative;z-index:0;background-color:#0b3c5d;
